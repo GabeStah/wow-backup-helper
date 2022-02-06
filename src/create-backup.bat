@@ -27,7 +27,7 @@ SET timestamp=%year%%month%%day%%hourMilitary%%minutes%
 SET installDirectory=%~dp0
 
 :: -------------------------------------------------------------------|
-:: Set to the location of your WoW directory,
+:: Set to the location of your WoW directory.
 SET gameDirectory=D:\Games\World of Warcraft\_retail_
 
 :: (Optional) Set to the location of your target backup directory.
