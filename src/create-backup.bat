@@ -37,6 +37,9 @@ mkdir %targetDirectory%
 
 :: -------------------------------------------------------------------|
 
+:: Cleanup old backups (older than 14 days)
+forfiles /p "%targetDirectory%" /d -14 /c "cmd /c if @isdir==TRUE rd /s /q @path"
+
 :: TIP: Comment out the lines below if you don't want to backup those directories.
 :: Backs up the WTF directory.
 "%installDirectory%..\lib\7za" a -tzip "%targetDirectory%\%timestamp%\WTF.zip" "%gameDirectory%\WTF" -mx5
